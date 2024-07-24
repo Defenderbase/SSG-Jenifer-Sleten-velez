@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Military Bio</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #FFD700; /* Yellow background color for table head */
+            border: 2px solid #FFD700; /* Double border line for table head */
+        }
+        .profile-image {
+            width: 200px;
+            height: auto;
+            border: 2px solid #FFD700; /* Double border line for passport */
+            padding: 5px; /* Add padding for spacing */
+        }
+        img#ghost {
+            width: 275px;
+            border: 10px solid #ffd700;
+        }
+    </style>
+</head>
+<body>
+
+<!-- U.S. military star icon -->
+<img src="https://gdocservices.com/wp-content/uploads/2020/06/1200px-Logo_of_the_United_States_Army.svg-1-1151x1536.png" alt="U.S. military star" width="75" height="75">
+
+<!-- Image link -->
+
+<img id = "ghost"
+src="img/ffffffff.jpeg" alt="Sergeant Image"width="175" height="185">
+
+<!-- Boxed table -->
+<table>
+    <tr>
+        <th>Field</th>
+        <th>Data</th>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>Jenifer Sleten velez</td>
+    </tr>
+    <tr>
+        <td>Birth Date</td>
+        <td>1993</td>
+    </tr>
+    
+    <tr>
+        <td>Citizen Status</td>
+        <td>Indianapolis ,fishers </td>
+    </tr>
+    <tr>
+        <td>Rank</td>
+        <td>Staff Sergeant [E-6] </td>
+    </tr>
+    <tr>
+        <td>Branch</td>
+        <td>United States Army </td>
+    </tr>
+   
+    <!-- Additional rows -->
+    
+     <tr>
+        <td>Years of Service</td>
+        <td>7 years  </td>
+    </tr>
+    <tr>
+        <td>Deployment Base</td>
+        <td> Baledogle Airfield, Somalia</td>
+    </tr>
+    <tr>
+        <td>Specializations</td>
+        <td>Emergency Room Specialist </td>
+    </tr>
+    <tr>
+        <td>Training Courses</td>
+        <td>Combat Lifesaver, Advanced Trauma Life Support (ATLS), Tactical Combat Casualty Care (TCCC) </td>
+    </tr>
+    <tr>
+        <td>Foreign Languages</td>
+        <td>English, French  </td>
+    </tr>
+  
+     <tr>
+        <td>Deployments</td>
+        <td>South Korea , Greece , Cameroun , Afghanistan, Poland</td>
+    </tr>
+    <tr>
+        <td>Awards</td>
+        <td>Purple Heart, Bronze Star</td>
+    </tr>
+    <tr>
+        <td>Psychological evaluation</td>
+
+       
+        <td>- Extremely high I.Q
+            <br>- High levels of resilience and adaptability (ability to thrive in dynamic environments)
+<br>- Exceptional motivation and initiative (self-starter with a strong work ethic)
+<br>- Strong sense of duty and loyalty (committed to mission accomplishment and teamwork)
+<br>- Excellent emotional regulation and impulse control (maturity and composure under stress)
+<br><br>
+<strong>Reason for Evaluation:</strong>
+
+<br>SSG Jenifer Sleten velez was referred for a psychological evaluation following her involvement in a high-stress combat lifesaving operation during the attack on Forward Operating Base Phoenix in Kabul, Afghanistan, on June 15, 2022. The purpose of the evaluation is to assess her psychological well-being and fitness for duty.
+
+<br><br><strong>Background Information:</strong>
+<br>SSG Jenifer Sleten velez, an Emergency Room Specialist, has been serving in the USAF Reserves for 2 years. She holds advanced training in Combat Lifesaver and Tactical Combat Casualty Care, and she is fluent in English and French. Her recent deployment in 2022 included a life-threatening incident for which she received the Purple Heart and Bronze Star.
+
+<br> <br><strong>Behavioral Traits:</strong>
+
+<br>- Demonstrates exceptional leadership potential (natural leader with a strong sense of responsibility)
+<br>- Exhibits a high level of physical and mental stamina (endurance and perseverance in challenging situations)
+<br>- Shows a strong commitment to personal and professional growth (self-awareness and desire for improvement)
+<br>- Possesses a high degree of integrity and moral character (trustworthy and ethical)
+
+<br> <br><strong>Psychological Strengths:</strong>
+
+<br>- Resilience and stress tolerance
+<br>- Emotional intelligence and empathy
+<br>- Adaptability and flexibility
+<br>- Strong work ethic and motivation
+<br>- Effective communication and teamwork</td>
+    </tr>
+    <tr>
+        <td>Incident Report:</td>
+        <td>On June 19, 2022, at approximately 14:30 local time, SSG Jenifer Sleten velez, an Emergency Room Specialist, was involved in a combat lifesaving operation following an insurgent attack on Forward Operating Base (FOB) Phoenix in Kabul, Afghanistan.
+
+            <br>
+            <br>Cleared: 
+
+<br>- Administered emergency medical treatment to injured personnel.
+<br>- Performed surgical interventions under austere conditions.
+<br>- Coordinated with evacuation teams to ensure timely transfer of critical patients to higher-level medical facilities.
+<br>- Provided continuous care and monitoring until the evacuation was complete.</td>
+    </tr>
+    
+    <!-- Add more rows as needed -->
+    <tr>
+        <td>Date</td>
+        <td id="date"></td> <!-- Display current date here -->
+    </tr>
+    <tr>
+        <td>Time</td>
+        <td id="time"></td> <!-- Display current time here -->
+    </tr>
+    <tr>
+        <td>Status</td>
+        <td><strong>Active</strong></td>
+    </tr>
+</table>
+
+<!-- Additional Information -->
+
+
+
+<script>
+    // Update time every second
+    setInterval(updateTime, 1000);
+
+    // Function to update time
+    function updateTime() {
+        var now = new Date();
+        var militaryTime = now.toTimeString().slice(0, 8);
+        document.getElementById("time").innerText = militaryTime;
+    }
+
+    // Display current date
+    var now = new Date();
+    var militaryDate = now.toISOString().slice(0, 10);
+    document.getElementById("date").innerText = militaryDate;
+</script>
+
+</body>
+</html>
